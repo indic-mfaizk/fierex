@@ -841,16 +841,60 @@ const LandingPage = () => {
                     <TableRow>
                       <TableCell></TableCell>
                       <TableCell sx={{ color: "white" }} align="center">
-                        Calories
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "5px",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Box component={"img"} src={btcCard} />
+                          <Typography color="white">Bitcoin</Typography>
+                        </Box>
                       </TableCell>
                       <TableCell sx={{ color: "white" }} align="center">
-                        Fat&nbsp;(g)
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "5px",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Box component={"img"} src={ethCard} />
+                          <Typography color="white">Eth</Typography>
+                        </Box>
                       </TableCell>
                       <TableCell sx={{ color: "white" }} align="center">
-                        Carbs&nbsp;(g)
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "5px",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Box component={"img"} src={rippleCard} />
+                          <Typography color="white">Ripple</Typography>
+                        </Box>
                       </TableCell>
                       <TableCell sx={{ color: "white" }} align="center">
-                        Protein&nbsp;(g)
+                        <Box
+                          sx={{
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "5px",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Box component={"img"} src={fieroCard} />
+                          <Typography color="white">Fiero</Typography>
+                        </Box>
                       </TableCell>
                     </TableRow>
                   </TableHead>
@@ -1449,7 +1493,8 @@ const LandingPage = () => {
                     </Typography>
                     <Box
                       sx={{
-                        bgcolor: "blue",
+                        background:
+                          "linear-gradient(110deg, #FFB000 -25.01%, #FF564D 31.16%, #FF0098 87.36%)",
                         height: "20px",
                         width: "20px",
                         borderRadius: "10px",
@@ -1490,7 +1535,8 @@ const LandingPage = () => {
                     </Typography>
                     <Box
                       sx={{
-                        bgcolor: "blue",
+                        background:
+                          "linear-gradient(110deg, #FFB000 -25.01%, #FF564D 31.16%, #FF0098 87.36%)",
                         height: "20px",
                         width: "20px",
                         borderRadius: "10px",
@@ -1531,7 +1577,8 @@ const LandingPage = () => {
                     </Typography>
                     <Box
                       sx={{
-                        bgcolor: "blue",
+                        background:
+                          "linear-gradient(110deg, #FFB000 -25.01%, #FF564D 31.16%, #FF0098 87.36%)",
                         height: "20px",
                         width: "20px",
                         borderRadius: "10px",
@@ -1572,7 +1619,8 @@ const LandingPage = () => {
                     </Typography>
                     <Box
                       sx={{
-                        bgcolor: "blue",
+                        background:
+                          "linear-gradient(110deg, #FFB000 -25.01%, #FF564D 31.16%, #FF0098 87.36%)",
                         height: "20px",
                         width: "20px",
                         borderRadius: "10px",
@@ -1856,7 +1904,7 @@ const LandingPage = () => {
             <Box
               component={"img"}
               src={Ctimeline}
-              sx={{ display: { xs: "none", lg: "flex" } }}
+              sx={{ display: { xs: "none", lg: "flex" }, width: "100%" }}
             />
             <Typography
               color="white"
@@ -2279,7 +2327,7 @@ const LandingPage = () => {
                           }}
                           onMouseEnter={(e) => {
                             // console.log(cardBlurHandler(e.currentTarget, i));
-                            // console.log(e.currentTarget.attributes);
+                            // console.log(e.currentTarget.);
                           }}
                           onMouseLeave={
                             (e) => null
