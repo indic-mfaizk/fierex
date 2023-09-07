@@ -2744,6 +2744,9 @@ const LandingPage = () => {
                 width: { lg: "33.3%", xs: "100%" },
                 bgcolor: "#12050e",
                 height: { lg: "300px", xs: "auto" },
+                display: "flex",
+                flexDirection: "column",
+                gap: "10px",
               }}
             >
               <Box
@@ -2777,6 +2780,7 @@ const LandingPage = () => {
                 fontFamily={"sora"}
                 fontWeight={"400"}
                 fontSize={"14px"}
+                sx={{ width: { xs: "auto", lg: "300px" } }}
               >
                 Decentralizing and democratizing education to build the most
                 interactive, immersive and insightful education metaverse, ever!
