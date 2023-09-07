@@ -41,6 +41,7 @@ function NavBar() {
         position="static"
         sx={{
           background: "linear-gradient(90deg, #160a13,#220d29,#1d0c20)",
+          pb: "10px",
         }}
       >
         <Container maxWidth="xl">

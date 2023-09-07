@@ -5,6 +5,7 @@ import { CssBaseline } from "@mui/material";
 import "./index.css";
 import "@fontsource-variable/sora";
 import "@fontsource-variable/inter";
+import "@fontsource-variable/oxanium";
 import LandingPage from "./screens/LandingPage.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
