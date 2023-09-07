@@ -2732,7 +2732,7 @@ const LandingPage = () => {
             sx={{
               bgcolor: "#12050e",
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-between",
               alignItems: "center",
               // flexDirection: { lg: "row", xs: "column-reverse" },
               flexWrap: { lg: "nowrap", xs: "wrap" },
@@ -2831,11 +2831,14 @@ const LandingPage = () => {
             </Box>
             <Box
               sx={{
-                width: { lg: "33.3%", xs: "100%" },
+                // width: { lg: "33.3%", xs: "100%" },
                 bgcolor: "#12050e",
                 height: { lg: "300px", xs: "auto" },
                 display: "flex",
                 flexDirection: "column",
+                alignItems: "start",
+                justifyContent: "start",
+                // textAlign: "left",
               }}
             >
               <Button sx={{ width: "fit-content" }}>
@@ -2906,6 +2909,46 @@ const LandingPage = () => {
           </Container>
         </Grid>
         {/* footer-end */}
+        {/* privacy-start */}
+        <Grid
+          container
+          sx={{
+            background: "#12050e",
+            // minWidth: "100dvw",
+
+            py: "20px",
+          }}
+        >
+          <Container
+            maxWidth="xl"
+            sx={{
+              bgcolor: "#12050e",
+              display: "flex",
+              justifyContent: { lg: "space-between", xs: "center" },
+              alignItems: "center",
+              // flexDirection: { lg: "row", xs: "column-reverse" },
+              flexWrap: { lg: "nowrap", xs: "wrap" },
+              gap: "10px",
+              borderTop: "1px",
+              borderTopColor: "rgba(255, 255, 255, 0.03)",
+              borderTopStyle: "solid",
+              pt: "10px",
+            }}
+          >
+            <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+              © 2023 Fieres All Rights Reserved
+            </Typography>
+            <Box sx={{ display: "flex", gap: "10px" }}>
+              <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+                Privacy Policy
+              </Typography>
+              <Typography fontFamily={"sora"} fontSize={"12px"} color={"white"}>
+                Token Disclaimer
+              </Typography>
+            </Box>
+          </Container>
+        </Grid>
+        {/* privacy-end */}
       </Box>
     </>
   );
